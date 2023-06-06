@@ -1,2 +1,2 @@
-# dra-edite-magalhaes
-Website and Blog
+# Dra. Edite Magalhães Website and Blog
+
