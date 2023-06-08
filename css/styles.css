@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  /* --- Primary colors --- */
+  --primary-color: hsl(170, 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
+  /* --- Font colors --- */
+  --vivid-pink: hsl(350, 98%, 77%);
+  --dark-pink-brown: hsl(354, 16%, 62%);
+  --dark-pink: hsl(350, 40%, 51%);
+
+  --light-green: hsl(167, 28%, 74%);
+  --medium-green: hsl(168, 20%, 60%);
+  --brand-green-hover: hsl(170, 100%, 14%);
+  --brand-green: hsl(168, 42%, 38%);
+
+  /* --- Background colors --- */
+  --light-pink: hsl(349, 100%, 97%);
+  --brand-green-light: hsl(180, 14%, 97%);
+  --bright-green: hsl(169, 28%, 92%);
+
+  /* --- Secondary colors --- */
+  --gray-headline: hsl(105, 100%, 5%);
+  --gray-paragraph: hsl(104, 16%, 24%);
+  --white: hsl(0, 0%, 100%);
+  --brand-beige: hsl(39, 100%, 97%);
+}
+
+body {
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+
+  text-align: center;
+}
+
+header {
+  width: 37.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4.1rem;
+}
+
+#logo_full {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 6rem;
+}
+
+header img {
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+}
+
+h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+
+  margin-bottom: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--paragraph);
+
+  margin-bottom: 3.2rem;
+}
+
+button {
+  background-color: var(--medium-green);
+
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 6rem;
+
+  height: 6.2rem;
+  width: 26.3rem;
+
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-right: auto;
+  margin-left: auto;
+}
