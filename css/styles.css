@@ -46,6 +46,20 @@ header {
   margin-top: 4.1rem;
 }
 
+header::before {
+  content: "";
+  width: 100vw;
+  height: 78rem;
+  background-color: var(--bright-green);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
 #logo_full {
   width: 100%;
   height: 100%;
@@ -53,8 +67,8 @@ header {
 }
 
 header img {
-  width: 80%;
-  margin-bottom: 5rem;
+  width: 26.2rem;
+  margin-bottom: 6rem;
 }
 
 h4 {
