@@ -15,9 +15,150 @@
 
     <title>Edite Magalhães - Nutrologia</title>
   </head>
-  <body>
-    <header>
+  <body onscroll="onScroll()" class="">
+    <nav id="navigation" class="">
+      <div class="wrapper">
+        <a class="logo" href="#">
+          <svg
+            width="72"
+            height="41"
+            viewBox="0 0 72 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M70.9997 32.0712L63.7952 4.17253C63.4987 3.04591 62.2489 3.01626 61.7792 4.17252C61.1625 5.6905 54.1893 19.7081 51.0169 26.7346C50.1603 28.6321 49.6029 28.5728 48.7637 26.7346C47.7675 24.5525 41.8557 12.0984 38.8909 5.89211C37.7347 4.5876 37.1229 3.75745 34.9774 3.75745C30.1448 3.75745 19.9558 3.75745 13.8088 3.75745C11.5852 3.75745 9.69364 4.64096 7.93848 6.39612"
+              stroke="#FE8EA0"
+              stroke-width="1.4231"
+              stroke-linecap="round"
+            />
+            <path
+              d="M13.7498 3.37184C13.4829 2.4824 11.7125 1 9.83623 1C8.0277 1 5.35942 2.83817 4.46998 5.23966C3.4927 7.87832 2.57251 9.70054 1.26801 10.1019C0.111744 10.4577 2.75042 12.2662 8.14634 10.8135C13.5701 9.35323 13.9218 5.21001 13.7498 4.17233"
+              stroke="#FE8EA0"
+              stroke-width="1.4231"
+              stroke-linecap="round"
+            />
+            <path
+              d="M31.5975 18.2847H9.83595C8.53144 18.2847 7.93848 18.9725 7.93848 20.3007C7.93848 21.629 7.93848 27.4558 7.93848 30.2031C7.93848 31.567 8.47214 32.1006 9.83595 32.1006C11.6385 32.1006 29.2455 32.1006 37.8236 32.1006C39.6618 32.1006 41.8557 32.3971 43.8718 34.4132M38.0015 31.6559C38.5352 30.9839 39.5135 29.7253 41.3814 29.3137C43.7236 28.7976 45.8671 29.966 46.5698 31.5966C48.1411 35.2433 48.1707 35.6287 49.831 37.2594C52.3511 38.8603 46.214 40.3427 42.508 38.7418C40.1816 37.7368 37.9718 36.4292 37.8236 32.6343"
+              stroke="#AACFC7"
+              stroke-width="1.4231"
+              stroke-linecap="round"
+            />
+          </svg>
+        </a>
 
+        <div class="menu">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Localização</a></li>
+          </ul>
+
+          <a class="button" href="#">Agende sua consulta</a>
+
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.instagram.com/draeditemagalhaes/"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.5H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          onclick="openMenu()"
+          class="open-menu"
+          aria-label="Open Menu"
+          aria-expanded="false"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#86AEA6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#86AEA6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#86AEA6"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          onclick="closeMenu()"
+          class="close-menu"
+          aria-label="Close Menu"
+          aria-expanded="true"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <header class="wrapper">
       <svg
         id="logo_full"
         width="1958"
@@ -66,7 +207,8 @@
       </button>
 
       <img src="./assets/images/Edite1.png" alt="Edite Magalhães de jaleco" />
-
     </header>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
