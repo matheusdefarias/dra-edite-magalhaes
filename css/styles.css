@@ -20,6 +20,7 @@
 
   --light-green: hsl(167, 28%, 74%);
   --medium-green: hsl(168, 20%, 60%);
+  --medium-green-hover: hsl(168, 13%, 42%);
   --brand-green-hover: hsl(170, 100%, 14%);
   --brand-green: hsl(168, 42%, 38%);
 
@@ -82,7 +83,7 @@ section header h4 {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 150%;
-  letter-spacing: 0.08rem;  
+  letter-spacing: 0.08rem;
   color: var(--primary-color);
 
   text-transform: uppercase;
@@ -93,7 +94,7 @@ section header h4 {
 section header h2 {
   font-size: 3rem;
   line-height: 3.9rem;
-  
+
   color: var(--gray-headline);
 }
 
@@ -109,8 +110,45 @@ section .content p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
-  
+
   color: var(--paragraph);
+}
+
+.button {
+  background-color: var(--medium-green);
+
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 6rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  text-decoration: none;
+
+  transition: background 200ms;
+}
+
+.button:hover {
+  background-color: var(--medium-green-hover);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
 }
 
 /* ============ NAVIGATION ============ */
@@ -144,7 +182,7 @@ nav.scroll svg path {
   stroke: white;
 }
 
-nav button {  
+nav button {
   background: none;
   border: none;
   cursor: pointer;
@@ -233,13 +271,6 @@ body.menu-expanded .menu {
   margin-bottom: 6rem;
 }
 
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.2rem;
-}
-
 body.menu-expanded .logo,
 body.menu-expanded button {
   position: relative;
@@ -274,6 +305,10 @@ body.menu-expanded button path {
   z-index: -1;
 } */
 
+#home .button {
+  margin-inline: auto;
+}
+
 #logo_full {
   width: 100%;
   height: 100%;
@@ -294,31 +329,6 @@ body.menu-expanded button path {
   color: var(--paragraph);
 
   margin-bottom: 3.2rem;
-}
-
-#home button {
-  background-color: var(--medium-green);
-
-  border: none;
-  border-radius: 4rem;
-
-  margin-bottom: 6rem;
-
-  height: 6.2rem;
-  width: 26.3rem;
-
-  color: var(--white);
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* ============ SERVICES ============ */
@@ -352,7 +362,7 @@ body.menu-expanded button path {
   background: var(--white);
 
   border: 1.5px solid var(--bright-green);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 #services .card h3 {
@@ -386,3 +396,96 @@ body.menu-expanded button path {
   margin-inline: auto;
   margin-bottom: 6rem;
 }
+
+/* ============ CONTACT ============ */
+
+#contact {
+  text-align: left;
+}
+
+#contact header {
+  margin-bottom: 3.2rem;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  margin-bottom: 1.6rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#contact .address p:nth-child(2),
+#contact .address p:nth-child(3),
+#contact .address p:nth-child(4) {
+  padding-left: 2.4rem;
+}
+
+#contact .address {
+  margin-bottom: 3.5rem;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+
+  border: 1.5px solid var(--bright-green);
+  border-radius: 0.6rem;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;  
+}
+
+/* ============ FOOTER ============ */
+
+footer {
+  background-color: var(--medium-green);
+  padding-block: 6rem;
+
+  text-align: center;
+
+  color: var(--white);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 8rem;
+}
+
+footer p {
+  color: var(--white);
+  line-height: 2;
+
+  /* margin-bottom: 3.2rem; */
+}
+
+footer .social-links {
+  justify-content: flex-start;
+}
+
+footer .logo-social-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .logo-social-links .social-links {
+  margin-top: 1.2rem;
+}
+
+
+
+
