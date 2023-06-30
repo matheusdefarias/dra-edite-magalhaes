@@ -316,7 +316,8 @@ body.menu-expanded button path {
 }
 
 #home img {
-  width: 26.2rem;
+  width: 100%;
+  /* width: 26.2rem; */
   display: block;
   margin-inline: auto;
   margin-bottom: 6rem;
@@ -391,7 +392,8 @@ body.menu-expanded button path {
 }
 
 #about img {
-  width: 26.2rem;
+  width: 100%;
+  /* width: 26.2rem; */
   display: block;
   margin-inline: auto;
   margin-bottom: 6rem;
