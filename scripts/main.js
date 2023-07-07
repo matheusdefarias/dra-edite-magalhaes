@@ -1,5 +1,9 @@
+window.addEventListener('scroll', onScroll);
+
+onScroll();
 function onScroll() {
   showNavOnScroll();
+  showBackToTopButtonOnScroll();
 }
 
 function showNavOnScroll() {
@@ -9,6 +13,16 @@ function showNavOnScroll() {
     navigationBar.classList.add("scroll");
   } else {
     navigationBar.classList.remove("scroll");
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  const backToTopButton = document.getElementById("backToTopButton");
+
+  if (scrollY > 550) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
   }
 }
 

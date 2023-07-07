@@ -15,10 +15,10 @@
 
     <title>Edite Magalhães - Nutrologia</title>
   </head>
-  <body onscroll="onScroll()" class="">
+  <body>
     <nav id="navigation">
       <div class="wrapper">
-        <a class="logo" href="#home">
+        <a onclick="closeMenu()" class="logo" href="#home">
           <svg
             width="72"
             height="41"
@@ -55,7 +55,9 @@
             <li><a onclick="closeMenu()" href="#contact">Localização</a></li>
           </ul>
 
-          <a class="button" href="#">Agende sua consulta</a>
+          <a onclick="closeMenu()" class="button" href="#contact">
+            Agende sua consulta
+          </a>
 
           <ul class="social-links">
             <li>
@@ -529,8 +531,23 @@
         
     </footer>
 
+    <a id="backToTopButton" href="#home">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" fill="#85ada5"/>
+        <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+        
+        
+        
+        
+        
+        
+        
+    </a>
+
     <!-- ScrollReveal library -->
-    <!-- Parei em 39 min -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./scripts/main.js"></script>
   </body>

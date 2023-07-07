@@ -271,6 +271,12 @@ body.menu-expanded .menu {
   margin-bottom: 6rem;
 }
 
+.menu .button:hover {
+  background: var(--medium-green);
+  color: var(--white);
+  filter: brightness(1.1);
+}
+
 body.menu-expanded .logo,
 body.menu-expanded button {
   position: relative;
@@ -488,6 +494,24 @@ footer .logo-social-links .social-links {
   margin-top: 1.2rem;
 }
 
+/* ============ BACK TO TOP ============ */
 
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;  
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
 
 
