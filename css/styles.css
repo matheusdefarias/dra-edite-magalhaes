@@ -709,6 +709,14 @@ footer .logo-social-links .social-links {
     margin: 0;
   } */
 
+  #home header img {
+    width: 100%;
+    /* width: 26.2rem; */
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 6rem;
+  }
+
   #home img {
     width: 42rem;
   }
