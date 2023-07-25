@@ -294,6 +294,7 @@ body.menu-expanded button path {
 /* ============ #HOME ============ */
 
 #home {
+  padding-block: 8rem;
   padding-top: calc(4.1rem + var(--nav-height));
   background-color: var(--bright-green);
 }
@@ -313,6 +314,15 @@ body.menu-expanded button path {
 
 #home .button {
   margin-inline: auto;
+}
+
+#home .social-links {
+  position: relative;
+  top: 48rem;  
+}
+
+#home .social-links svg path {
+  stroke: var(--medium-green);
 }
 
 #logo_full {
@@ -573,7 +583,7 @@ footer .logo-social-links .social-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
+    width: 72%;
   }
 
   nav#navigation .menu ul:nth-child(1) {
@@ -667,4 +677,90 @@ footer .logo-social-links .social-links {
     color: var(--medium-green);
     border: none;
   }
+
+  /*==================== HOME ====================*/
+
+  #home {
+    padding-top: var(--nav-height);
+  }
+
+  #home .wrapper {
+    padding-top: 8rem;
+    grid-template-columns: 60.5rem 1fr;
+    grid-template-areas:
+      "A B"
+      "C C";
+  }
+
+  #home .col-a {
+    text-align: left;
+    align-self: center;
+  }
+
+  #home h1 {
+    font-size: 5.2rem;
+  }
+
+  #home .content p {
+    font-size: 1.8rem;
+  }
+
+  /* #home .button {
+    margin: 0;
+  } */
+
+  #home img {
+    width: 42rem;
+  }
+
+  #home .social-links {
+    position: initial;
+  }
+
+  /*==================== SERVICES ====================*/
+
+  #services h2 {
+    width: 50rem;
+    margin-inline: auto;
+  }
+
+  #services .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #services .card {
+    width: 30%;
+    flex-grow: 1;
+  }
+
+  /*==================== ABOUT ====================*/
+
+  #about .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "B A";
+    gap: 6.7rem;
+  }
+
+  #about .col-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+
+  /*==================== CONTACT ====================*/
+
+  #contact .wrapper {
+    grid-template-columns: 1fr 57.5rem;
+    grid-template-areas: "A B";
+    gap: 6.7rem;
+  }
+
+  #contact h2 {
+    width: 40.4rem;
+  }
+
 }
